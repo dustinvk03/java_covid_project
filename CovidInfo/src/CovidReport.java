@@ -14,7 +14,7 @@ public class CovidReport {
 		
 		// If 1 => retrieve data
 		
-		System.out.print("Enter region code: World - 1 | USA - 2 | WSU - 3");
+		System.out.println("Enter region code: World - 1 | USA - 2 | WSU - 3");
 		int regionCode = scan.nextInt();
 		
 		USA usa = new USA();
