@@ -1,11 +1,12 @@
 
-public class USA {
+public class WSU {
 	
 
-	private int numcases = 44900000;
-	private int numdealth = 724000;		
+	private int numcases = 100;
+	private int numdealth = 0;		
 		
-
+	
+	
 	public int getnumcases() {
 		return numcases;
 		
@@ -15,5 +16,5 @@ public class USA {
 		return numdealth;
 		
 	}
-
+	
 }

@@ -1,10 +1,35 @@
 import java.util.Scanner;
 
-public class CovidReport {
+public class Test {
 	
 	private int regionCode;
 	private int requestCode;
 
+	
+
+public class US {
+	
+
+	private int numcases = 2222;
+	private int numdealth = 22;		
+		
+	
+	
+	public int getnumcases() {
+		return numcases;
+		
+	}
+	
+	public int getnumdealth() {
+		return numdealth;
+		
+	}
+	
+
+	
+}
+	
+	
 	public static void main(String[] args) {
 		
 		int requestCode = 0;
@@ -39,11 +64,10 @@ public class CovidReport {
 			int regionCode = scan.nextInt();
 			
 			World world = new World();
-			USA usa = new USA();
+			US us = new US();
 			WSU wsu = new WSU();
 			
-		
-			
+
 			if (regionCode == 1) {
 				
 				
@@ -63,8 +87,8 @@ public class CovidReport {
 			else if (regionCode == 2) {
 				
 			
-				int cases = usa.getnumcases();
-				int dealth = usa.getnumdealth();
+				int cases = us.getnumcases();
+				int dealth = us.getnumdealth();
 				
 				
 			
@@ -104,7 +128,8 @@ public class CovidReport {
 
 			}
 			
-			
+			else 
+				System.out.println("Sorry, wrong code");
 				
 			System.out.println("New request code? ");
 			requestCode = scan.nextInt();
